@@ -53,11 +53,11 @@ install: all
 	@echo installing executable file to ${DESTDIR}${PREFIX}/bin
 	@mkdir -p ${DESTDIR}${PREFIX}/bin
 	@cp -f st-wl ${DESTDIR}${PREFIX}/bin
-	@chmod 755 ${DESTDIR}${PREFIX}/bin/st
+	@chmod 755 ${DESTDIR}${PREFIX}/bin/st-wl
 	@echo installing manual page to ${DESTDIR}${MANPREFIX}/man1
 	@mkdir -p ${DESTDIR}${MANPREFIX}/man1
-	@sed "s/VERSION/${VERSION}/g" < st-wl.1 > ${DESTDIR}${MANPREFIX}/man1/st.1
-	@chmod 644 ${DESTDIR}${MANPREFIX}/man1/st.1
+	@sed "s/VERSION/${VERSION}/g" < st-wl.1 > ${DESTDIR}${MANPREFIX}/man1/st-wl.1
+	@chmod 644 ${DESTDIR}${MANPREFIX}/man1/st-wl.1
 	@echo Please see the README file regarding the terminfo entry of st-wl.
 	@tic -s st-wl.info
 
