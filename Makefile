@@ -63,8 +63,8 @@ install: all
 
 uninstall:
 	@echo removing executable file from ${DESTDIR}${PREFIX}/bin
-	@rm -f ${DESTDIR}${PREFIX}/bin/st
+	@rm -f ${DESTDIR}${PREFIX}/bin/st-wl
 	@echo removing manual page from ${DESTDIR}${MANPREFIX}/man1
-	@rm -f ${DESTDIR}${MANPREFIX}/man1/st.1
+	@rm -f ${DESTDIR}${MANPREFIX}/man1/st-wl.1
 
 .PHONY: all options clean dist install uninstall
